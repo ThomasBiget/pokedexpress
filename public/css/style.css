@@ -1,0 +1,121 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'VT323', monospace;
+    color: #272623;
+    font-weight: 400;
+    text-decoration: none;
+}
+a {
+    color: #272623;
+    text-decoration: none;  
+}
+
+/* Header */
+header {
+    background-color: #e22a49;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.round {
+    display: flex;
+}
+
+.round--main {
+    border: whitesmoke 4px solid;
+    background-color: #2AAAFC;
+    width: 60px;
+    height: 60px;
+    border-radius: 32px;
+    margin: 1em 1.5em;
+}
+.round--red, .round--yellow, .round--green {
+    border: rgb(7, 7, 7) 1px solid;
+    background-color: #cf0d0d;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 1em 0.5em;
+}
+.round--yellow {
+    background-color: #ece908;
+}
+.round--green {
+    background-color: #05b322;
+}
+
+/* Home */
+.container--home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.article--home {
+    display: flex;
+    width: 10vw;
+    margin: 1em;
+    border: 5px solid #EAC956;
+    border-radius: 15px;
+    text-align: center;
+    transition: all ease .5s;
+    font-size: 1rem;
+    z-index: 1;
+      }
+      
+ .article--home:hover {
+    display: flex;
+    width: 12vw;
+    /* font-size: 3.2rem; */
+    text-shadow: 0px 10px 4px rgba(0,0,0,0.5);
+    border: 5px solid #EAC956;
+    border-radius: 15px;
+    z-index: 2;
+    transition: all ease .5s;
+    background-color: antiquewhite;
+}
+
+.card--title {
+    font-weight: bold;
+    color: #272623; 
+    font-size: 1.2rem;
+}
+
+.img--home {
+    width: 7vw;
+    transition: all ease .5s;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: bisque;
+    border: #D5BC66 3px solid;
+    border-radius: 15px;
+}
+
+.img--home:hover {
+    width: 9vw;
+    z-index: 2;
+    padding: 1em;
+    margin-top: 1em;
+    transition: all ease .5s;
+    background-color: bisque;
+    border: #D5BC66 3px solid;
+    border-radius: 15px;
+}
+
+
+/* Pokemon page */
+.container--pokemon {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.article--pokemon {
+    width: 50vw;
+}

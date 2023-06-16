@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+  <main>
+    <h2>Liste des Pokemon</h2>
+    <div class="container--home">
+       <% for (const pokemon of pokedex) { %>
+        <% i++ %>
+        <article class="article--home">
+            <p class="p--home">
+             <a class="card--title" href="/pokemon/<%= pokemon.name %>"> #<%= pokemon.index %> <%= pokemon.name %> 
+              <img class="img--home" src="/img/<%= i %>.png" alt=" <%= pokemon.name %> "> </a>
+            </p>
+        </article>
+        <% } %> 
+    </div>
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+
+</html>

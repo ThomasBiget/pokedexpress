@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+  <main>
+    <div class="container">
+        <% for (const pokemon of pokedex) { %>
+            <% i++ %>
+        <% if (pokemonName === pokemon.name) { %>
+
+        <article>         
+            <h3>
+                <%= pokemon.index %> <%= pokemon.name %>
+            </h3>
+            <img src="/img/<%= i %>.png" alt=" <%= pokemon.name %> ">
+            
+            <p>N°: <%= pokemon.index %> </p>
+            
+            <p>Type : <%= pokemon.type %> </p>
+        </article>
+        <% } } %>
+    </div>
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
